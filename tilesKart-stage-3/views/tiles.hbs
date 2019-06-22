@@ -1,0 +1,20 @@
+ <table class="table">
+        <thead>
+          <th>image</th>
+          <th>name</th>
+          <th>model</th>
+          <th>price</th>
+          <th>status</th>
+          <th>rating</th>
+        </thead>
+        {{#each tiles}}
+        <tr>
+          <td><img src="/images/{{image}}"></td>
+          <td>{{name}}</td>
+          <td>{{model}}</td>
+          <td>{{price}}</td>
+          <td>{{status}}</td>
+          <td>{{rating}}</td>
+        </tr>
+        {{/each}}
+      </table>

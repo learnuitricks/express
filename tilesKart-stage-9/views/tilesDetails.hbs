@@ -1,0 +1,42 @@
+<div class="container">
+<div class="card ">
+<div class="card-header bg-primary">{{tile.name}}</div>
+<div class="card-body">
+<div class="wrapper row">
+<div class="preview col-md-6">
+<div class="preview-pic tab-content">
+<div class="imgt">
+<img src="/images/{{tile.image}}" style="height:275px;width:275px;" />
+</div>
+</div>
+</div>
+<div class="details col-md-6">
+<h3 class="product-title"> Details of the tiles {{tile.name}}</h3>
+<p class="product-description">Suspendisse quos? Tempus cras
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ut quisquam quod, accusantium, ratione accusamus, veritatis possimus dolorum et repellat sed assumenda eaque! Distinctio, repellat voluptas explicabo natus laboriosam laudantium
+</p>
+<h4 class="models">Model: <span>{{tile.model}}</span></h4>
+<h4 class="Price">Price: <span>{{tile.price}}</span></h4>
+<h4 class="Rating">Rating: <span>{{tile.rating}}</span></h4>
+<div class='row'>
+<div class='col-md-4'>
+<h4>Quantity</h4>
+</div>
+<div class='col-md-4' style="margin-left:6px">
+<input type="number" name="qty" id="qty" >
+</div>
+
+</div>
+<div class="action">
+<button class="add-to-cart btn btn-primary" style='margin: 1px 1px 1px 1px;'type="button">add to cart</button>
+<button class="like btn btn-primary" type="button">wishlist</button>
+<button class="back-to-tiles btn btn-primary " (click)="navigateBack()" style='margin: 1px 1px 1px 1px;' type="button">Back</button>
+</div>
+</div>
+</div>
+
+</div>
+<div class="card-footer bg-primary"></div>
+</div>
+</div>
+

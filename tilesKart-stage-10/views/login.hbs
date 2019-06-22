@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="card">
+    <article class="card-body">
+      <a href="register" class="float-right btn btn-outline-primary">Register</a>
+
+      <h4 class="card-title mb-4 mt-1">Sign in</h4>
+      <form method="post" action="/users">
+        <div class="form-group">
+          <label>User Name</label>
+          <input type="text" name="username" class="form-control" id="username" placeholder="username">
+        </div> <!-- form-group// -->
+
+
+        <div class="form-group">
+          <label>Your password</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="******">
+        </div> <!-- form-group// -->
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block" onclick="return validateLogin()"> Login </button>
+        </div> <!-- form-group// -->
+      </form>
+    </article>
+  </div> <!-- card// -->
+</div>
